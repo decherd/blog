@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "posts/yt-dlp/index.html",
+    "href": "posts/yt-dlp/index.html",
+    "title": "Replacing youtube-dl with yt-dlp",
+    "section": "",
+    "text": "How to use yt-dlp\nFirst of all, I just recently heard about yt-dlp. It was from an Andrej Karpathy tweet where he had downloaded all of Lex Friedman’s podcast episodes and then transcribed them with a new AI model called OpenAI Whisper. He created a site that showed the tools he used and one of them was yt-dlp.\nSo, I was thinking that this might be a helpful post for me to look back at to see how to use yt-dlp compared to youtube-dl, however, it seems that yt-dlp can be used as a direct drop-in replacement.\nThe reason I am transitioning to yt-dlp is that I found that it is much faster than youtube-dl for some reason. I’ve not looked into the reasons why but I can download a video or audio file at my full internet speed. Previously, I was only able to download them at around 50KiB/s.\nI will post a few aliases that I use for downloading videos, audio, and playlists:\nalias ytmusic='yt-dlp -o \"~/Downloads/Youtube-dl/%(title)s.%(ext)s\" -f m4a `pbpaste`'\nalias ytvideo='yt-dlp -o \"~/Downloads/Youtube-dl/%(title)s.%(ext)s\" -f \"bv[height<=720][ext=mp4]+ba[ext=m4a]/b[height<=720][ext=mp4]\" `pbpaste`'\nalias ytvideo-playlist='yt-dlp -o \"~/Downloads/Youtube-dl/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s\" -f \"bv[height<=720][ext=mp4]+ba[ext=m4a]/b[height<=720][ext=mp4]\" `pbpaste`'\nAs you can see above using yt-dlp is very simple:\n\nSet the output location, file name, and extension using the -o flag. You can manually set these or use the template arguments.\nSet the desired format to download with the -f flag. There are many options available to filter the best quality that you desire.\nFinally, paste in the url at the end. As you can see here I am using pbpaste so that I can copy my url from my browser and then when I run my alias it will grab the current clipboard on its own.\n\nWhen using the playlist alias make sure to copy the link to the actual playlist. It will then create a folder in the location you set and start naming all the files and numbering them sequentially so that you can make sure to watch them in the order of the playlist.\nI hope this is helpful to future me at the very least. If you liked what see here please reach out to me on  @drewecherd and let me know. That would be super encouraging. Thanks!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Replacing youtube-dl with yt-dlp\n\n\n\n\n\n\n\ntools\n\n\npython\n\n\n\n\n\n\n\n\n\n\n\nNov 27, 2022\n\n\nDrew Echerd\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About This Blog",
+    "section": "",
+    "text": "I enjoy finding solutions to problems and helping others see how they can solve their own problems. This blog is a place for me to document what I’m learning and perhaps, if I do it well, help others learn a thing or two. If anything you see here is helpful in any way I’d love to hear about it. Connect with me on Twitter."
+  }
+]
