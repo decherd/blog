@@ -1,0 +1,19 @@
+---
+title: "fast.ai: Practical Deep Learning 2022"
+author: "Drew Echerd"
+date: "2022-11-015"
+categories: [fastai]
+image: "fastai_course.jpg"
+draft: true
+---
+
+![](fastai_course.jpg){fig-alt="Practical Deep Learning for Coders"}
+
+# Practical Deep Learning for Coders 2022
+
+I am currently working through fast.ai's 2022 course: [Practical deep learning for coders](https://www.fast.ai/posts/2022-07-21-dl-coders-22.html).
+
+## Learning Objectives
+- To understand what are current realistic results that can be achieved on my budget and with the amount of data I can access?
+- To be able to develop a model and then reuse that model on different systems.
+- To be able to solve a problem with fastai that I come up with on my own.

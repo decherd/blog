@@ -1,0 +1,16 @@
+---
+title: "About This Blog"
+image: portrait.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/drewecherd
+    - icon: github
+      text: Github
+      href: https://github.com/decherd
+
+---
+
+I enjoy finding solutions to problems and helping others see how they can solve their own problems. This blog is a place for me to document what I'm learning and perhaps, if I do it well, help others learn a thing or two. If anything you see here is helpful in any way I'd love to hear about it. Connect with me on [Twitter](https://www.twitter.com/drewecherd).
